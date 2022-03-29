@@ -39,4 +39,15 @@ public class MyMapNode<K, V> implements INode<K> {
 	public void setNext(INode<K> next) {
 		this.next = (MyMapNode<K, V>) next;
 	}
+
+	@Override
+	public String toString() {
+		StringBuffer strBuffer = new StringBuffer();
+		strBuffer.append("MyNode{Key=" + key + ",Value="
+				+ value + "}");
+		if (next != null) {
+			strBuffer.append("=>" + next);
+		}
+		return strBuffer.toString();
+	}
 }

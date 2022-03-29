@@ -26,4 +26,17 @@ public class MyHashMap<K, V> {
 		return myMapNode == null ? null
 				: myMapNode.getValue();
 	}
+
+	public int size() {
+		return myLinkedList.size();
+	}
+
+	public boolean isEmpty() {
+		return size() == 0;
+	}
+
+	@Override
+	public String toString() {
+		return myLinkedList.toString();
+	}
 }
