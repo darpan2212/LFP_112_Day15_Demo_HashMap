@@ -60,5 +60,10 @@ public class MyHashMapTest {
 		}
 
 		ht.printAllList();
+		System.out.println(ht.size());
+		System.out.println(ht.remove("avoidable"));
+		ht.printAllList();
+		System.out.println(ht.size());
+		System.out.println(ht.isEmpty());
 	}
 }

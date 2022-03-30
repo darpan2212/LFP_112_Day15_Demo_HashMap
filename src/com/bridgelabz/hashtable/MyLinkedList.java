@@ -135,4 +135,8 @@ public class MyLinkedList<K> {
 		}
 		return null;
 	}
+
+	public boolean isEmpty() {
+		return size() == 0;
+	}
 }
